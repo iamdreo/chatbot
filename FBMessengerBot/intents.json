@@ -1,0 +1,52 @@
+{"intents": [
+        {"tag": "ekele",
+         "patterns": ["Kedu", "ime la ghi", "mmadu no egba?", "kedu", "otutu oma"],
+         "responses": ["Ndewo, ekele maka nleta", "Ọ dị mma ịhụ gị ọzọ", "Gaa n'ebe ahụ, olee otu m nwere ike isi nye aka?"],
+         "context_set": ""
+        },
+        {"tag": "ka o di",
+         "patterns": ["Bye", "ka ahụ ma emechaa", "Ka o di"],
+         "responses": ["Hụ gị n'ikpeazụ, ekele maka nleta", "Nwee ọmarịcha ụbọchị", "Bye! Bịaghachi n'oge na-adịghị anya"]
+        },
+        {"tag": "daalu",
+         "patterns": ["Ekele", "Daalu", "Nke ahụ na-enye aka"],
+         "responses": ["Ana m asị gị nnọọ!", "Oge ọ bụla!", "Anụrị m"]
+        },
+	{"tag": "mba",
+         "patterns": [""],
+         "responses": ["Ndo, enweghi ike ighota gi", "Biko nye m ozi ọzọ", "Ekwenyeghi na m ghotara"]
+        },
+        {"tag": "awa",
+         "patterns": ["Kedu oge i na-emeghe?", "Kedu oge gị?", "Kedu mgbe i na-emeghe?" ],
+         "responses": ["Anyị na-emeghe kwa ụbọchị 9 nke ụtụtụ 9-9", "Awa anyị bụ 9 am-9pm kwa ụbọchị"]
+        },
+        {"tag": "jeans",
+         "patterns": ["o ga-amasi m izuta ngwaahia jeans", "Achoro m izuta jeans","Kedu udi akwa i nwere?", "Kedu udi jeans di?", "Kedu ihe i nwere?" ],
+         "responses": ["Anyi nwere pensul, ebucha na akpaaka, nke i na-ahoro?", "pensul, obere ihe na akpaaka, nke i na-amasi?"],
+	 "context_set": "buyjeans"
+        },
+        {"tag": "ikwu ugwo",
+         "patterns": ["kaadi akwumugwo", "i na-ewere kaadi akwumugwo?", "i na-anabata MasterCard?", "i bu naani ego?" ],
+         "responses": ["Anyi na-anabata Visa, Mastercard na Verve", "Anyi na-anakwere otutu kaadi kaadi akwumugwo nigerian"]
+        },
+	{"tag": "pensul",
+         "patterns": ["pensul jeans", "pensul", "pensul" ],
+         "responses": ["pensul bu ezigbo jeans"],
+	 "context_filter": "buyjeans"
+        },
+	{"tag": "obere ihe",
+         "patterns": ["obere ihe jeans", "obere ihe", "obere ihe" ],
+         "responses": ["obere ihe bụ ọkacha mmasi m"],
+	 "context_filter": "buyjeans"
+        },
+	{"tag": "baggy",
+         "patterns": ["akpa jeans", "akpa"],
+         "responses": ["Egwuregwu bu old school but some people still like it"],
+	 "context_filter": "buyjeans"
+        },
+        {"tag": "meghee taa",
+         "patterns": ["nnu meghee taa", "Kedu mgbe i na-emeghe taa?", "Kedu oge gi taa?"],
+         "responses": ["Anyi na-emeghe kwa ubochi site n'elekere 9 nke ututu ruo mgbede", "Awa anyi bu 9 am-9pm kwa ubochi"]
+        }
+   ]
+}
